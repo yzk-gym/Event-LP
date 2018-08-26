@@ -1,0 +1,58 @@
+/*
+  クレヨンで書いた様なフォント
+  ※一部漢字は使用できない(小学校1～3年で習うような漢字は入っているらしい)
+*/
+@font-face {
+    font-family: 'crayon';
+    src: url('../fonts/KajudenFont-Crayon.ttf');
+}
+
+/*
+  子供が書いたようなフォント
+  ※漢字は使用できない
+*/
+@font-face {
+    font-family: 'like-children-wrote';
+    src: url('../fonts/KodomoRounded.otf');
+}
+
+body {
+    background-image: url('../images/top-image.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.description {
+    font-family: 'like-children-wrote';
+    font-size: 2em;
+}
+
+.eye-catch-text {
+    font-family: 'crayon';
+    font-size: 3em;
+    line-height: 1.9;
+    height: 500px;
+    width: 100%;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+.line-morning-groly {
+    border: 0;
+    height: 50px;
+    background: url('../images/line1.png') no-repeat top center;
+    margin: 20px 0px 20px 0px;
+}
+
+.entry-text {
+    font-family: 'like-children-wrote';
+    font-size: 2em;
+    text-align: center;
+}
+
+.sample-image {
+    width: 40%;
+}
