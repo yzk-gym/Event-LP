@@ -1,0 +1,89 @@
+/*
+  クレヨンで書いた様なフォント
+  ※一部漢字は使用できない(小学校1～3年で習うような漢字は入っているらしい)
+*/
+@font-face {
+    font-family: 'crayon';
+    src: url('../fonts/KajudenFont-Crayon.ttf');
+}
+
+/*
+  子供が書いたようなフォント
+  ※漢字は使用できない
+*/
+@font-face {
+    font-family: 'like-children-wrote';
+    src: url('../fonts/KodomoRounded.otf');
+}
+
+body {
+    background-image: url('../images/top-image.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .header-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+}
+
+.description {
+    font-family: 'like-children-wrote';
+    font-size: 3em;
+}
+.description--text{
+    margin-left:5em;
+}
+
+.eye-catch-image {
+    margin: 10px 0px 10px 0px;
+}
+
+.eye-catch-title {
+    font-family: 'crayon';
+    font-size: 3.2em;
+    line-height: 1.9;
+    margin-top:20px;
+}
+
+.eye-catch-text {
+    font-family: 'crayon';
+    font-size: 3em;
+    line-height: 1.9;
+    height: 500px;
+    width: 100%;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+.line-morning-groly {
+    border: 0;
+    height: 50px;
+    background: url('../images/line1.png') no-repeat top center;
+    margin: 80px 0px 80px 0px;
+}
+
+.entry-text {
+    margin-bottom: 2.5em;
+    font-family: 'like-children-wrote';
+    font-size: 3em;
+    text-align: center;
+}
+
+.sample-image {
+    width: 40%;
+}
