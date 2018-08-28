@@ -45,7 +45,7 @@ body {
     font-size: 3em;
 }
 .description--text{
-    margin-left:4em;
+    margin-left:5em;
 }
 
 .eye-catch-image {
@@ -74,7 +74,7 @@ body {
     border: 0;
     height: 50px;
     background: url('../images/line1.png') no-repeat top center;
-    margin: 30px 0px 30px 0px;
+    margin: 80px 0px 80px 0px;
 }
 
 .entry-text {
