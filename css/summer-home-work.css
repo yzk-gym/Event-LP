@@ -17,8 +17,19 @@
 }
 
 body {
+    background: none;
+}
+
+body::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
     background-image: url('../images/top-image.png');
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -37,6 +48,14 @@ body {
         height: 300px;
         object-fit: cover;
         object-position: 0% 0%;
+    }
+
+    body {
+        background-image: url('../images/top-image.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
     }
 }
 
