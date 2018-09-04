@@ -1,4 +1,4 @@
-
+// Initialize Firebase
 var config = {
     apiKey: "AIzaSyC76aALagIfHH3idf8xbHRF_WlDaPa0bnM",
     authDomain: "event-lp-176b8.firebaseapp.com",
@@ -8,4 +8,3 @@ var config = {
     messagingSenderId: "876520377408"
 };
 firebase.initializeApp(config);
-
