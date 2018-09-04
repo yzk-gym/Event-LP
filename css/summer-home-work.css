@@ -130,21 +130,25 @@ button {
 }
 
 .painstaking-work-title {
+    margin:50px 0px 40px;
     font-family: 'yama-font';
     font-size: 3.5em;
 }
 
 .painstaking-work-text {
+    margin: 20px;
     font-family: 'kawaii-font';
     font-size: 2.5em;
+    text-align: center;
 }
 
 .painstaking-work-image {
-    margin: 10px 0px 10px 0px;
-    width: max-content;
+    margin: 30px auto;
+    width: 80%;
 }
 
 .vote-button {
+    margin:40px 0 60px;
     font-family: 'yama-font';
     font-size: 3em;
 }
