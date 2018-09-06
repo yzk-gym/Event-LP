@@ -6,5 +6,5 @@ var config = {
     projectId: "event-lp-176b8",
     storageBucket: "",
     messagingSenderId: "876520377408"
-};
-firebase.initializeApp(config);
+  };
+  firebase.initializeApp(config);

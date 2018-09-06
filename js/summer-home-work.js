@@ -17,7 +17,7 @@ $('.vote-button').on('click', function() {
 
     if (cookie_value !== 1) {
         cookie_name = $.cookie(name)
-        voteCountAll = db.ref('/' + $(this).data('name'))
+        voteCountAll = db.ref('/' + name)
         updateData(name)
         $.cookie('vote-flag', 1)
         $('.vote-button').addClass('disabled')
@@ -26,6 +26,7 @@ $('.vote-button').on('click', function() {
 })
 
 function updateData(name) {
+    voteCountAll = db.ref('/' + name)
     voteCountAll.once('value', function(snapshot, name) {
         let vote_key = snapshot.key
         if (vote_key != null) {

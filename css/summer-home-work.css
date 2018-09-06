@@ -130,9 +130,16 @@ button {
 }
 
 .painstaking-work-title {
-    margin:50px 0px 40px;
+    margin: 50px 0px 40px;
     font-family: 'yama-font';
     font-size: 3.5em;
+}
+
+.painstaking-work-author {
+    margin: 50px;
+    font-family: 'kawaii-font';
+    font-size: 3.0em;
+    text-align: center;
 }
 
 .painstaking-work-text {
