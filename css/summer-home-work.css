@@ -1,6 +1,6 @@
 /*
   クレヨンで書いた様なフォント
-  ※一部漢字は使用できない(小学校1～3年で習うような漢字は入っているらしい)
+  ※漢字は使用できない
 */
 @font-face {
     font-family: 'crayon';
@@ -9,11 +9,29 @@
 
 /*
   子供が書いたようなフォント
-  ※漢字は使用できない
+  ※一部漢字は使用できない(小学校1～3年で習うような漢字は入っているらしい)
 */
 @font-face {
     font-family: 'like-children-wrote';
     src: url('../fonts/KodomoRounded.otf');
+}
+
+/*
+  ちょっとかわいいフォント
+  ※「柚」が非対応だった
+*/
+@font-face {
+    font-family: 'kawaii-font';
+    src: url('../fonts/KTEGAKI.ttf');
+}
+
+/*
+  崩れている字
+  ※「柚」があった
+*/
+@font-face {
+    font-family: 'yama-font';
+    src: url('../fonts/yamafont.ttf');
 }
 
 body {
@@ -33,6 +51,10 @@ body::before {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
+}
+
+button {
+    margin-bottom: 10px;
 }
 
 .header-image {
@@ -105,4 +127,46 @@ body::before {
 
 .sample-image {
     width: 40%;
+}
+
+.painstaking-work-title {
+    margin:50px 0px 40px;
+    font-family: 'yama-font';
+    font-size: 3.5em;
+}
+
+.painstaking-work-text {
+    margin: 20px;
+    font-family: 'kawaii-font';
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.painstaking-work-image {
+    margin: 30px auto;
+    width: 80%;
+}
+
+.vote-button {
+    margin:40px 0 60px;
+    font-family: 'yama-font';
+    font-size: 3em;
+}
+
+.toast-text {
+    font-family: 'yama-font';
+    font-size: 3em;
+}
+
+.description-result-title{
+    line-height: 100px;
+    color: red;
+    font-size: 1.6em;
+}
+.description-result-homework{
+    line-height:100px;
+    font-size:1.5em;
+}
+.premium{
+    color:red;
 }
